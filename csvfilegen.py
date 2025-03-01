@@ -16,7 +16,12 @@ data = []
 
 def generate_data(num_rows):
     for _ in range(num_rows):
-        row = [random.choice([0, 1]) for _ in range(6)]
+        row = [random.choice([0, 1]) for _ in range(5)]
+
+        row.append(1 if row.count(1) >= 3 else 0)
+        if random.random() < 0.1:
+            row[-1] = 1 if row[-1] == 0 else 0
+
         data.append(row)
     return data
 
