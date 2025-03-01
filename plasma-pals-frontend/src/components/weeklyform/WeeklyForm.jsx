@@ -37,18 +37,18 @@ const WeeklyForm = () => {
     const userId = localStorage.getItem("questionnaireUserId");
 
     const formData = {
-      Timestamp: timestamp,
-      "User ID": userId,
-      [questions[0]]: answers[0],
-      [questions[1]]: answers[1],
-      [questions[2]]: answers[2],
-      [questions[3]]: answers[3],
-      [questions[4]]: answers[4],
+      userId: userId,
+      question1: answers[0] === "Yes" ? 1 : 0,
+      question2: answers[1] === "Yes" ? 1 : 0,
+      question3: answers[2] === "Yes" ? 1 : 0,
+      question4: answers[3] === "Yes" ? 1 : 0,
+      question5: answers[4] === "Yes" ? 1 : 0,
+      timeofVisit: timestamp,
     };
 
     try {
       const response = await fetch(
-        "http://localhost:3001/api/questionnaire/submissions", // <-- API ENDPOINT URL
+        "http://localhost:3001/api/questionnaire/submissions",
         {
           method: "POST",
           headers: {
