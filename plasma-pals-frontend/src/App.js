@@ -59,17 +59,18 @@ const App = () => {
       .padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
   };
 
+  // Handle radio button changes for the survey
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  // Updated: Convert True/False to 1/0 and output the array
+  // Updated: Output array of 1s/0s + email + goal
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Survey Submitted:", formData);
 
-    // 1. Build the array of 1s and 0s
+    // 1. Convert True/False answers into an array of 1s/0s
     const responseArray = [
       formData.q1 === "true" ? 1 : 0,
       formData.q2 === "true" ? 1 : 0,
@@ -78,11 +79,17 @@ const App = () => {
       formData.q5 === "true" ? 1 : 0,
     ];
 
-    // 2. Log the array and show it in an alert
-    console.log("Response array:", responseArray);
-    alert(`Response array: [${responseArray.join(", ")}]`);
+    // 2. Log them to console
+    console.log("Survey array:", responseArray);
+    console.log("User email:", email);
+    console.log("Financial goal:", goal);
 
-    alert("Thank you for your feedback!");
+    // 3. Show them in an alert
+    alert(
+      `Survey array: [${responseArray.join(", ")}]\nEmail: ${email}\nGoal: ${goal}\n\nThank you for your feedback!`
+    );
+
+    // 4. Reset form data and hide survey
     setFormData({
       q1: "",
       q2: "",
