@@ -1,6 +1,5 @@
 // src/App.js
 import React, { useState, useEffect } from "react";
-// 1. Import your PNG image from the src folder
 import PlasmaImage from "./plasma.png";
 
 const App = () => {
@@ -65,9 +64,24 @@ const App = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  // Updated: Convert True/False to 1/0 and output the array
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Survey Submitted:", formData);
+
+    // 1. Build the array of 1s and 0s
+    const responseArray = [
+      formData.q1 === "true" ? 1 : 0,
+      formData.q2 === "true" ? 1 : 0,
+      formData.q3 === "true" ? 1 : 0,
+      formData.q4 === "true" ? 1 : 0,
+      formData.q5 === "true" ? 1 : 0,
+    ];
+
+    // 2. Log the array and show it in an alert
+    console.log("Response array:", responseArray);
+    alert(`Response array: [${responseArray.join(", ")}]`);
+
     alert("Thank you for your feedback!");
     setFormData({
       q1: "",
@@ -97,7 +111,6 @@ const App = () => {
         PlasmaPals
       </h1>
 
-      {/* 2. Display the image just under the heading */}
       <img
         src={PlasmaImage}
         alt="Plasma Donation"
