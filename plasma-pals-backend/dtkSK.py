@@ -6,7 +6,8 @@ from sklearn import metrics
 from joblib import dump, load
 import graphviz
 
-df = read_csv('survey-test-data.csv', header=0)
+file_name = "survey-test-data.csv"
+df = read_csv(file_name, header=0)
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
 
