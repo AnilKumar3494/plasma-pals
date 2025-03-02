@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.tree import export_graphviz
 from sklearn import metrics
+from joblib import dump, load
 import graphviz
 
 df = read_csv('survey-test-data.csv', header=0)
