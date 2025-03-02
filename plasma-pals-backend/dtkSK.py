@@ -20,6 +20,10 @@ y_pred = clf.predict(X_test)
 
 print("Accuracy:", metrics.accuracy_score(y_test, y_pred))
 
+dump(clf, 'decision_tree_model.joblib')
+
+#loaded_model = load('decision_tree_model.joblib')
+
 dot_data = export_graphviz(clf, out_file=None, 
                            feature_names=df.columns[:-1],  
                            class_names=['No', 'Yes'],  
