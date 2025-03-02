@@ -1,5 +1,7 @@
 // src/App.js
 import React, { useState, useEffect } from "react";
+// 1. Import your PNG image from the src folder
+import PlasmaImage from "./plasma.png";
 
 const App = () => {
   const [timeLeft, setTimeLeft] = useState(84 * 60 * 60);
@@ -36,7 +38,6 @@ const App = () => {
   const handleDonate = () => {
     setDonations(donations + 1);
     setSurveyVisible(true); // Ensure survey is visible
-    // Always reset the timer to 84 hours
     setTimerRunning(true);
     setTimeLeft(84 * 60 * 60);
   };
@@ -92,7 +93,16 @@ const App = () => {
         fontFamily: "'Montserrat', sans-serif",
       }}
     >
-      <h1 style={{ fontSize: "72px", color: "#DAA520", marginBottom: "20px" }}>PlasmaPals</h1>
+      <h1 style={{ fontSize: "72px", color: "#DAA520", marginBottom: "20px" }}>
+        PlasmaPals
+      </h1>
+
+      {/* 2. Display the image just under the heading */}
+      <img
+        src={PlasmaImage}
+        alt="Plasma Donation"
+        style={{ width: "300px", marginBottom: "20px" }}
+      />
 
       <div style={{ marginBottom: "20px" }}>
         <input
@@ -136,7 +146,13 @@ const App = () => {
             type="number"
             value={goal}
             onChange={handleGoalChange}
-            style={{ padding: "10px", marginLeft: "5px", borderRadius: "5px", border: "1px solid #ccc", fontSize: "24px" }}
+            style={{
+              padding: "10px",
+              marginLeft: "5px",
+              borderRadius: "5px",
+              border: "1px solid #ccc",
+              fontSize: "24px",
+            }}
           />
         </label>
       </div>
@@ -190,7 +206,9 @@ const App = () => {
             boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
           }}
         >
-          <h2 style={{ fontSize: "36px", marginBottom: "20px" }}>Weekly Update Survey</h2>
+          <h2 style={{ fontSize: "36px", marginBottom: "20px" }}>
+            Weekly Update Survey
+          </h2>
           <form onSubmit={handleSubmit}>
             {[
               "Was the time it took reasonable?",
