@@ -5,8 +5,7 @@ from sklearn.tree import export_graphviz
 from sklearn import metrics
 import graphviz
 
-#df = read_csv('survey-test-data.csv', header=0)
-df = read_csv('~/Documents/GitHub/plasma-pals/plasma-pals-backend/survey-test-data.csv', header=0)
+df = read_csv('survey-test-data.csv', header=0)
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
 
@@ -27,5 +26,5 @@ dot_data = export_graphviz(clf, out_file=None,
                            special_characters=True)  
 
 graph = graphviz.Source(dot_data)  
-graph.render("iris_decision_tree")
+graph.render("survey-results")
 graph.view() 
