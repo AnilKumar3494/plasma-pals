@@ -1,7 +1,7 @@
 import csv
 import random
 
-filename = "survey-test-data.csv"
+filename = "survey_test_data.csv"
 
 headers = [
     "Time",
