@@ -47,16 +47,14 @@ const WeeklyForm = () => {
     };
 
     try {
-      const response = await fetch(
-        "http://localhost:3001/api/questionnaire/submissions",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      // **UPDATED fetch URL - Port changed to 5000, path changed to /api/submit-form**
+      const response = await fetch("http://localhost:5000/api/submit-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         setHasSubmitted(true);
