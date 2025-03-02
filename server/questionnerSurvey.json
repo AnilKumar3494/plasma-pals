@@ -1,0 +1,802 @@
+[
+  {
+    "email": "test.submission1@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission2@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission3@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission4@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission5@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission6@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission7@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission8@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission9@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission10@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission11@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission12@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission13@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission14@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission15@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission16@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission17@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission18@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission19@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission20@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission21@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission22@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission23@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission24@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission25@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission26@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission27@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission28@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission29@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission30@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission31@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission32@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission33@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission34@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission35@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission36@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission37@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission38@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission39@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission40@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission41@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission42@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission43@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission44@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission45@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission46@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission47@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission48@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission49@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission50@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission51@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission52@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission53@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission54@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission55@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission56@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission57@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission58@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission59@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission60@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission61@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission62@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission63@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission64@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission65@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission66@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission67@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission68@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission69@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission70@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission71@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission72@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission73@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission74@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission75@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission76@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission77@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission78@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission79@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission80@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission81@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission82@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission83@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission84@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission85@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission86@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission87@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission88@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission89@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission90@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission91@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission92@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission93@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission94@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission95@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission96@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 0,
+    "Q5": 0
+  },
+  {
+    "email": "test.submission97@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission98@plasma-pals.org",
+    "Q1": 1,
+    "Q2": 1,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission99@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 0,
+    "Q3": 1,
+    "Q4": 1,
+    "Q5": 1
+  },
+  {
+    "email": "test.submission100@plasma-pals.org",
+    "Q1": 0,
+    "Q2": 1,
+    "Q3": 0,
+    "Q4": 0,
+    "Q5": 1
+  }
+]
