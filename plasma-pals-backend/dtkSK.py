@@ -6,14 +6,15 @@ from sklearn import metrics
 from joblib import dump, load
 import graphviz
 
-file_name = "survey-test-data.csv"
+file_name = "survey_test_data.csv"
+max_depth = 5
 df = read_csv(file_name, header=0)
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=1)
 
-clf = DecisionTreeClassifier(criterion="entropy")
+clf = DecisionTreeClassifier(criterion="entropy", max_depth=max_depth)
 
 clf = clf.fit(X_train, y_train)
 
