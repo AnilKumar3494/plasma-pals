@@ -10,11 +10,13 @@ from torch.utils.data import TensorDataset, DataLoader
 
 # Set random seed for reproducibility
 seed = 900
-np.random.seed(seed)
-torch.manual_seed(seed)
+if seed is not None:
+    print(f"✅ Using Seed: {seed}")
+    np.random.seed(seed)
+    torch.manual_seed(seed)
 
 # Load dataset (assumes the first row contains the header)
-file_name = "transfusion.data"
+file_name = "survey_test_data.csv"#"transfusion.data"
 df = pd.read_csv(file_name, header=0)  # First row used as header
 
 # Verify the columns, expected: ['Recency', 'Frequency', 'Monetary', 'Time', 'Donated']
@@ -25,7 +27,7 @@ X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
 
 # Split the data into training and testing sets (e.g., 70/30 split)
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=seed)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=seed if seed is not None else None)
 
 # Standardize the features
 scaler = StandardScaler()
