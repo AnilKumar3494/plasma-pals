@@ -1,8 +1,8 @@
-// src/App.js
 import React, { useState, useEffect } from "react";
-import PlasmaImage from "./plasma.png";
+import PlasmaImage from "../../assets/plasma.png";
+import WeeklyForm from "../weeklyform/WeeklyForm";
 
-const App = () => {
+const HeroSection = () => {
   const [timeLeft, setTimeLeft] = useState(84 * 60 * 60);
   const [timerRunning, setTimerRunning] = useState(false);
   const [surveyVisible, setSurveyVisible] = useState(false);
@@ -10,13 +10,6 @@ const App = () => {
   const [donations, setDonations] = useState(0);
   const [email, setEmail] = useState("");
   const [emailAdded, setEmailAdded] = useState(false);
-  const [formData, setFormData] = useState({
-    q1: "",
-    q2: "",
-    q3: "",
-    q4: "",
-    q5: "",
-  });
 
   const handleGoalChange = (e) => {
     const value = parseInt(e.target.value) || 0;
@@ -46,17 +39,17 @@ const App = () => {
     url.searchParams.append("command", command);
 
     fetch(url)
-        .then(response => response.text()) // Read as text first
-        .then(text => {
-            try {
-                const data = JSON.parse(text);
-                console.log("Python Output:", data.output);
-            } catch (error) {
-                console.error("Invalid JSON response:", text);
-            }
-        })
-        .catch(error => console.error("Error running Python script:", error));
-}
+      .then((response) => response.text()) // Read as text first
+      .then((text) => {
+        try {
+          const data = JSON.parse(text);
+          console.log("Python Output:", data.output);
+        } catch (error) {
+          console.error("Invalid JSON response:", text);
+        }
+      })
+      .catch((error) => console.error("Error running Python script:", error));
+  }
 
   useEffect(() => {
     if (timerRunning && timeLeft > 0) {
@@ -76,53 +69,11 @@ const App = () => {
       .padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
   };
 
-  // Handle radio button changes for the survey
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
-  };
+  console.log("Running Python script with email:", email);
 
-  // Updated: Output array of 1s/0s + email + goal
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Survey Submitted:", formData);
+  runPythonScript(`python3 emailer.py ${email}`);
 
-    // 1. Convert True/False answers into an array of 1s/0s
-    const responseArray = [
-      formData.q1 === "true" ? 1 : 0,
-      formData.q2 === "true" ? 1 : 0,
-      formData.q3 === "true" ? 1 : 0,
-      formData.q4 === "true" ? 1 : 0,
-      formData.q5 === "true" ? 1 : 0,
-    ];
-
-    // 2. Log them to console
-    console.log("Survey array:", responseArray);
-    console.log("User email:", email);
-    console.log("Financial goal:", goal);
-
-    // 3. Show them in an alert
-    alert(
-      `Survey array: [${responseArray.join(", ")}]\nEmail: ${email}\nGoal: ${goal}\n\nThank you for your feedback!`
-    );
-
-    console.log("Running Python script with email:", email);
-
-    runPythonScript(`python3 emailer.py ${email} ${goal} ${donations}`);
-
-    runPythonScript(`python3 backend/predictDonor.py ${email} ${formData.q1} ${formData.q2} ${formData.q3} ${formData.q4} ${formData.q5}`);
-
-    // 4. Reset form data and hide survey
-    setFormData({
-      q1: "",
-      q2: "",
-      q3: "",
-      q4: "",
-      q5: "",
-    });
-    setSurveyVisible(false);
-
-  };
+  //runPythonScript(`python3 script.py ${formData.q1} ${formData.q2} ${formData.q3} ${formData.q4} ${formData.q5} ${email}`);
 
   const peopleHelped = donations * 3;
   const totalEarned = donations * 50;
@@ -151,6 +102,7 @@ const App = () => {
       <div style={{ marginBottom: "20px" }}>
         <input
           type="email"
+          required
           placeholder="Enter your email"
           value={email}
           onChange={handleEmailChange}
@@ -220,11 +172,21 @@ const App = () => {
       <div style={{ marginBottom: "20px" }}>
         <p style={{ fontSize: "24px" }}>Total Donations: {donations}</p>
         <p style={{ fontSize: "24px" }}>People Helped: {peopleHelped}</p>
-        <p style={{ fontSize: "24px" }}>Time until next donation: {formatTime(timeLeft)}</p>
+        <p style={{ fontSize: "24px" }}>
+          Time until next donation: {formatTime(timeLeft)}
+        </p>
       </div>
 
-      <div style={{ marginBottom: "20px", maxWidth: "800px", margin: "0 auto" }}>
-        <div style={{ backgroundColor: "#eee", borderRadius: "5px", overflow: "hidden" }}>
+      <div
+        style={{ marginBottom: "20px", maxWidth: "800px", margin: "0 auto" }}
+      >
+        <div
+          style={{
+            backgroundColor: "#eee",
+            borderRadius: "5px",
+            overflow: "hidden",
+          }}
+        >
           <div
             style={{
               width: `${progress}%`,
@@ -250,60 +212,11 @@ const App = () => {
             boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
           }}
         >
-          <h2 style={{ fontSize: "36px", marginBottom: "20px" }}>
-            Weekly Update Survey
-          </h2>
-          <form onSubmit={handleSubmit}>
-            {[
-              "Was the time it took reasonable?",
-              "Did you feel comfortable with the process?",
-              "Did you feel that the staff was friendly and professional?",
-              "Did you feel that you were properly compensated for your time?",
-              "Were you satisfied with the overall experience?",
-            ].map((question, index) => (
-              <div key={index} style={{ marginBottom: "20px" }}>
-                <p style={{ fontSize: "24px" }}>{question}</p>
-                <label>
-                  <input
-                    type="radio"
-                    name={`q${index + 1}`}
-                    value="true"
-                    onChange={handleInputChange}
-                    required
-                  />
-                  True
-                </label>
-                <label style={{ marginLeft: "20px" }}>
-                  <input
-                    type="radio"
-                    name={`q${index + 1}`}
-                    value="false"
-                    onChange={handleInputChange}
-                    required
-                  />
-                  False
-                </label>
-              </div>
-            ))}
-            <button
-              type="submit"
-              style={{
-                backgroundColor: "#DAA520",
-                color: "#fff",
-                padding: "15px 30px",
-                border: "none",
-                borderRadius: "5px",
-                cursor: "pointer",
-                fontSize: "24px",
-              }}
-            >
-              Submit Survey
-            </button>
-          </form>
+          <WeeklyForm email={email} goal={goal} donations={donations} />
         </div>
       )}
     </div>
   );
 };
 
-export default App;
+export default HeroSection;

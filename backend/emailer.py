@@ -18,5 +18,15 @@ def send_email(reciever, subject, body):
 
 print(f"Sending email to: {sys.argv[1]}")
 
-send_email(sys.argv[1], "PlasmaPals DONATION SUBMISSION!", "You completed a donation! \
+goal = int(sys.argv[2])
+donations = int(sys.argv[3])
+helped = donations * 3
+
+left = (goal - donations * 50) / 50
+
+print(goal, donations, helped, left)
+
+send_email(sys.argv[1], f"PlasmaPals DONATION SUBMISSION!", f"You completed a donation!\n\n \
+You're only {left} donations away from reaching your goal of ${goal}! You've helped aproximately \
+{helped} people with your donation! \
  \n\nThanks, \nThe PlasmaPals")
